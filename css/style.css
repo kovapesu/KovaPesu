@@ -536,6 +536,15 @@ overflow:hidden;
    MIKSI KOVAPESU
 ========================================== */
 
+.why h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #c7ab7b;
+    margin: 18px auto 0;
+}
+
 .why{
 
     background:#111111;
@@ -1250,4 +1259,29 @@ header.hide{
     font-size:18px;
 
 }
+
+.why h2 {
+    font-family: "Cinzel", serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #c7ab7b;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-family: "Cinzel", serif;
+    font-size: clamp(2.3rem, 4vw, 3.4rem);
+    font-weight: 700;
+    color: #c7ab7b;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+    line-height: 1.2;
+}
+
+
 
