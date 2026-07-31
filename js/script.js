@@ -391,3 +391,8 @@ menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
+// Sulje mobiilivalikko vierittäessä
+window.addEventListener("scroll", () => {
+    navLinks.classList.remove("active");
+    menuToggle.classList.remove("active");
+});
