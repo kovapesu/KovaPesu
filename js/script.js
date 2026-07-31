@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (window.scrollY > 80) {
 
-        header.classList.add("scrolled");
+    header.classList.add("scrolled");
 
-    } else {
+} else {
 
-        header.classList.remove("scrolled");
+    header.classList.remove("scrolled");
 
-    }
+}
 
     if (window.scrollY > lastScroll && window.scrollY > 150) {
 
@@ -383,4 +383,11 @@ if(footer){
     }
 
 };
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
