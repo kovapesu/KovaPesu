@@ -382,20 +382,7 @@ if(footer){
 
     }
 
-};
-
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
-
-// Sulje mobiilivalikko vierittäessä
-window.addEventListener("scroll", () => {
-    navLinks.classList.remove("active");
-    menuToggle.classList.remove("active");
-});
+}
 
 /* ==========================
    MOBILE MENU
