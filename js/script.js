@@ -25,15 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }
 
-    if (window.scrollY > lastScroll && window.scrollY > 150) {
+   if (window.scrollY > lastScroll && window.scrollY > 150) {
 
-        header.classList.add("hide");
+    console.log("HIDE");
+    header.classList.add("hide");
 
-    } else {
+} else {
 
-        header.classList.remove("hide");
+    console.log("SHOW");
+    header.classList.remove("hide");
 
-    }
+}
 
     lastScroll = window.scrollY;
 
@@ -389,20 +391,34 @@ if(footer){
 ========================== */
 
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const mobileNav = document.querySelector(".nav-links");
 
-if (menuToggle && navLinks) {
+console.log("Mobile menu loaded");
+
+console.log(menuToggle);
+console.log(mobileNav);
+
+if (menuToggle && mobileNav) {
 
     menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+
+        console.log("MENU CLICK");
+
+        mobileNav.classList.toggle("active");
         menuToggle.classList.toggle("active");
+
+        menuToggle.innerHTML =
+            menuToggle.classList.contains("active") ? "✕" : "☰";
+
     });
 
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
-            navLinks.classList.remove("active");
+            mobileNav.classList.remove("active");
             menuToggle.classList.remove("active");
+            menuToggle.innerHTML = "☰";
         });
     });
 
 }
+
