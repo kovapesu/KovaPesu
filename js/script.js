@@ -422,3 +422,30 @@ if (menuToggle && mobileNav) {
 
 }
 
+/* ==========================================
+   FAQ ACCORDION
+========================================== */
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question => {
+
+    question.addEventListener("click", () => {
+
+        const currentItem = question.parentElement;
+
+        // Suljetaan kaikki muut
+        document.querySelectorAll(".faq-item").forEach(item => {
+
+            if (item !== currentItem) {
+                item.classList.remove("active");
+            }
+
+        });
+
+        // Avataan tai suljetaan klikattu
+        currentItem.classList.toggle("active");
+
+    });
+
+});
