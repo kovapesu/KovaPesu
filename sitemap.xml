@@ -9,5 +9,19 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://kovapesu.fi/tietosuoja.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://kovapesu.fi/omavalvonta.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
 

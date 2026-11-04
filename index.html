@@ -8,13 +8,13 @@
 
 <link rel="icon" type="image/x-icon" href="favicon.png">
 
-<title>KovaPesu | Ikkunanpesu Uusimaa</title>
+<title>KovaPesu | Ikkunanpesu ja kotisiivous Uusimaa</title>
 
 <meta name="description"
-content="KovaPesu tarjoaa laadukasta ikkunanpesua koteihin, yrityksille ja taloyhtiöille koko Uudenmaan alueella.">
+content="KovaPesu tarjoaa laadukasta ikkunanpesua koteihin, yrityksille ja taloyhtiöille sekä kotisiivousta koko Uudenmaan alueella.">
 
 <meta name="keywords"
-content="ikkunanpesu, ikkunanpesu Helsinki, ikkunanpesu Espoo, ikkunanpesu Vantaa, ikkunanpesu Uusimaa, KovaPesu">
+content="ikkunanpesu, ikkunanpesu Helsinki, ikkunanpesu Espoo, ikkunanpesu Vantaa, ikkunanpesu Uusimaa, kotisiivous, kotisiivous Uusimaa, KovaPesu">
 
 <meta name="author"
 content="KovaPesu">
@@ -30,8 +30,8 @@ content="KovaPesu">
 
 <link rel="canonical" href="https://kovapesu.fi/">
 
-<meta property="og:title" content="KovaPesu | Ikkunanpesu koko Uusimaa">
-<meta property="og:description" content="Ammattitaitoinen ikkunanpesu koteihin, yrityksille ja taloyhtiöille koko Uudenmaan alueella.">
+<meta property="og:title" content="KovaPesu | Ikkunanpesu ja kotisiivous koko Uusimaa">
+<meta property="og:description" content="Ammattitaitoinen ikkunanpesu koteihin, yrityksille ja taloyhtiöille sekä kotisiivous koko Uudenmaan alueella.">
 <meta property="og:image" content="https://kovapesu.fi/images/share-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -116,7 +116,7 @@ Kovaa työtä.
 
 Tarkkaa jälkeä.
 
-Ammattitaitoista ikkunanpesua koko Uudenmaan alueella.
+Ammattitaitoista ikkunanpesua ja kotisiivousta koko Uudenmaan alueella.
 
 </p>
 
@@ -223,6 +223,18 @@ WhatsApp
 
                 <p>
                     Lehdet ja roskat pois turvallisesti.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+
+                <h3>Kotisiivous</h3>
+
+                <p>
+                    Säännöllinen tai kertaluontoinen siivous alkaen 45,90 €/tunti (sis. alv 25,5 %).
                 </p>
             </div>
 
@@ -361,17 +373,27 @@ Pyydä maksuton tarjous
 
 </h2>
 
-<form>
+<form action="https://formspree.io/f/xdeeblvg" method="POST">
 
-<input type="text" placeholder="Nimi">
+<input type="hidden" name="subject" value="Uusi tarjouspyyntö – kovapesu.fi">
 
-<input type="tel" placeholder="Puhelinnumero">
+<input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off">
 
-<input type="email" placeholder="Sähköposti">
+<input type="text" name="nimi" placeholder="Nimi" autocomplete="name" required>
 
-<select>
+<input type="tel" name="puhelin" placeholder="Puhelinnumero" autocomplete="tel" required>
+
+<input type="email" name="email" placeholder="Sähköposti" autocomplete="email">
+
+<select name="palvelu" aria-label="Palvelu">
 
 <option>Ikkunanpesu</option>
+
+<option>Kotisiivous</option>
+
+<option>Suursiivous</option>
+
+<option>Muuttosiivous</option>
 
 <option>Parvekelasien pesu</option>
 
@@ -381,7 +403,13 @@ Pyydä maksuton tarjous
 
 </select>
 
-<textarea placeholder="Kerro kohteesta"></textarea>
+<textarea name="viesti" placeholder="Kerro kohteesta"></textarea>
+
+<p class="form-note">
+
+Älä kirjoita lomakkeeseen terveystietoja. Lue <a href="tietosuoja.html">tietosuojaseloste</a>.
+
+</p>
 
 <button type="submit">
 
@@ -463,6 +491,36 @@ Lähetä tarjouspyyntö
 
             </div>
 
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Paljonko kotisiivous maksaa?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Kotisiivouksen hinta on alkaen 45,90 €/tunti (sis. alv 25,5 %).
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Saanko kotisiivouksen ilman arvonlisäveroa?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Siivous voi olla arvonlisäverotonta sosiaalihuollon palveluna, jos toimintakykysi on alentunut esimerkiksi vamman, sairauden tai korkean iän vuoksi ja palvelusta tehdään sopimus ja palvelusuunnitelma. KovaPesu on rekisteröity Soteri-rekisteriin. Soita, niin selvitetään sinun tilanteesi.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -473,7 +531,19 @@ Lähetä tarjouspyyntö
 
 <div class="container">
 
-<img src="assets/logo.png" class="footer-logo">
+<img src="assets/logo.png" alt="KovaPesu" class="footer-logo">
+
+<p>
+
+KovaPesu Oy
+
+</p>
+
+<p>
+
+Vatakuja 1 C 30, 00200 Helsinki
+
+</p>
 
 <p>
 
@@ -489,7 +559,19 @@ Lähetä tarjouspyyntö
 
 <p>
 
-Y-tunnus 3629034-5
+Y-tunnus 3629034-5 • ALV-tunnus FI36290345
+
+</p>
+
+<p>
+
+Sosiaalihuollon palvelut: Soteri-rekisteri, valvova viranomainen Lupa- ja valvontavirasto
+
+</p>
+
+<p>
+
+<a href="tietosuoja.html">Tietosuojaseloste</a> • <a href="omavalvonta.html">Omavalvontasuunnitelma</a>
 
 </p>
 
@@ -549,6 +631,22 @@ WhatsApp
         "@type":"Answer",
         "text":"Kyllä. Tarvittaessa pesemme myös karmit, puitteet ja ikkunalaudat."
       }
+    },
+    {
+      "@type":"Question",
+      "name":"Paljonko kotisiivous maksaa?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Kotisiivouksen hinta on alkaen 45,90 €/tunti (sis. alv 25,5 %)."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Saanko kotisiivouksen ilman arvonlisäveroa?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Siivous voi olla arvonlisäverotonta sosiaalihuollon palveluna, jos toimintakykysi on alentunut esimerkiksi vamman, sairauden tai korkean iän vuoksi ja palvelusta tehdään sopimus ja palvelusuunnitelma. KovaPesu on rekisteröity Soteri-rekisteriin. Soita, niin selvitetään sinun tilanteesi."
+      }
     }
   ]
 }
@@ -572,7 +670,7 @@ WhatsApp
     "@type": "AdministrativeArea",
     "name": "Uusimaa"
   },
-  "description": "KovaPesu tarjoaa ammattitaitoista ikkunanpesua koteihin, yrityksille ja taloyhtiöille koko Uudenmaan alueella.",
+  "description": "KovaPesu tarjoaa ammattitaitoista ikkunanpesua koteihin, yrityksille ja taloyhtiöille sekä kotisiivousta koko Uudenmaan alueella.",
   "priceRange": "€€",
   "openingHours": "Mo-Fr 08:00-18:00",
   "sameAs": []
