@@ -239,7 +239,7 @@ section p{
         rgba(0,0,0,.45),
         rgba(0,0,0,.65)
     ),
-    url("../images/hero.png");
+    url("../images/hero.jpg");
 
     background-size:cover;
 
@@ -1200,37 +1200,37 @@ header.hide{
 .cards .card:nth-child(1){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/window.png");
+    url("../images/services/window.jpg");
 }
 
 .cards .card:nth-child(2){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/company.png");
+    url("../images/services/company.jpg");
 }
 
 .cards .card:nth-child(3){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/apartment.png");
+    url("../images/services/apartment.jpg");
 }
 
 .cards .card:nth-child(4){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/balcony.png");
+    url("../images/services/balcony.jpg");
 }
 
 .cards .card:nth-child(5){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/solar.png");
+    url("../images/services/solar.jpg");
 }
 
 .cards .card:nth-child(6){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/gutter.png");
+    url("../images/services/gutter.jpg");
 }
 
 .cards .card:nth-child(7){
@@ -1341,7 +1341,7 @@ header.hide{
 .why-grid div:nth-child(1){
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url("../images/why/trust.png");
+    url("../images/why/trust.jpg");
 
     background-size: cover;
     background-position: center 75%;
@@ -1351,7 +1351,7 @@ header.hide{
 .why-grid div:nth-child(2){
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url("../images/why/quality.png");
+    url("../images/why/quality.jpg");
 
     background-size: cover;
     background-position: center 45%;
@@ -1361,7 +1361,7 @@ header.hide{
 .why-grid div:nth-child(3){
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url("../images/why/professional.png");
+    url("../images/why/professional.jpg");
 
     background-size: cover;
     background-position: center 20%;
