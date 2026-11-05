@@ -110,6 +110,8 @@ header{
 
 .nav-links a{
 
+    white-space:nowrap;
+
     color:white;
 
     font-size:16px;
@@ -163,6 +165,8 @@ header.scrolled .nav-links a{
 }
 
 .nav-button{
+
+    white-space:nowrap;
 
     background:var(--gold);
 
@@ -1507,7 +1511,7 @@ header.hide{
     display:none;
 }
 
-@media (max-width:768px){
+@media (max-width:1200px){
 
     .navbar{
         position:relative;
