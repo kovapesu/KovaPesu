@@ -239,7 +239,7 @@ section p{
         rgba(0,0,0,.45),
         rgba(0,0,0,.65)
     ),
-    url("../images/hero.png");
+    url("../images/hero.jpg");
 
     background-size:cover;
 
@@ -674,6 +674,127 @@ overflow:hidden;
 
 }
 
+.contact .hidden-field{
+
+    display:none;
+
+}
+
+.form-note{
+
+    font-size:14px;
+
+    color:var(--gray);
+
+    text-align:center;
+
+}
+
+.form-note a,
+footer a,
+.legal a{
+
+    color:var(--gold);
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+   TIETOSUOJASELOSTE
+========================================== */
+
+.legal{
+
+    padding:60px 0 90px;
+
+}
+
+.legal .container{
+
+    max-width:800px;
+
+}
+
+.legal h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:44px;
+
+    line-height:1.2;
+
+    color:var(--gold);
+
+    margin:30px 0 10px;
+
+}
+
+.legal h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:26px;
+
+    line-height:1.3;
+
+    color:var(--gold);
+
+    margin:45px 0 15px;
+
+}
+
+.legal h3{
+
+    font-size:18px;
+
+    color:var(--text);
+
+    margin:25px 0 10px;
+
+}
+
+.legal p,
+.legal li{
+
+    color:var(--gray);
+
+    margin-bottom:12px;
+
+}
+
+.legal ul{
+
+    list-style:disc;
+
+    padding-left:22px;
+
+    margin-bottom:12px;
+
+}
+
+.legal-date{
+
+    font-size:14px;
+
+}
+
+@media(max-width:600px){
+
+    .legal h1{
+
+        font-size:32px;
+
+    }
+
+    .legal h2{
+
+        font-size:22px;
+
+    }
+
+}
+
 .contact input:focus,
 .contact select:focus,
 .contact textarea:focus{
@@ -1079,37 +1200,136 @@ header.hide{
 .cards .card:nth-child(1){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/window.png");
+    url("../images/services/window.jpg");
 }
 
 .cards .card:nth-child(2){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/company.png");
+    url("../images/services/company.jpg");
 }
 
 .cards .card:nth-child(3){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/apartment.png");
+    url("../images/services/apartment.jpg");
 }
 
 .cards .card:nth-child(4){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/balcony.png");
+    url("../images/services/balcony.jpg");
 }
 
 .cards .card:nth-child(5){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/solar.png");
+    url("../images/services/solar.jpg");
 }
 
 .cards .card:nth-child(6){
     background-image:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/services/gutter.png");
+    url("../images/services/gutter.jpg");
+}
+
+.cards .card:nth-child(7){
+    background-image:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../images/services/cleaning.webp");
+}
+
+.card-link{
+    position:relative;
+    z-index:2;
+    display:inline-block;
+    margin-top:16px;
+    color:var(--gold);
+    font-weight:700;
+    text-decoration:underline;
+}
+
+/* ==========================================
+   KOTISIIVOUSSIVU
+========================================== */
+
+.hero.page-hero{
+    min-height:65vh;
+    background-image:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
+    url("../images/services/cleaning.webp");
+}
+
+.hero.page-hero .hero-content{
+    padding-top:150px;
+}
+
+.hero.page-hero h1{
+    font-size:clamp(38px,7vw,72px);
+    margin-bottom:25px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.info-grid-two{
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+
+.info-box{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:35px 30px;
+}
+
+.info-box h3{
+    font-family:'Cinzel',serif;
+    font-size:22px;
+    color:var(--gold);
+    margin-bottom:14px;
+}
+
+.info-box p,
+.info-box li{
+    color:var(--gray);
+}
+
+.info-box a{
+    color:var(--gold);
+    text-decoration:underline;
+}
+
+.check-list li{
+    position:relative;
+    padding-left:26px;
+    margin-bottom:8px;
+}
+
+.check-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:var(--gold);
+    font-weight:700;
+}
+
+.step-number{
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:16px;
+    border-radius:50%;
+    background:var(--gold);
+    color:var(--black);
+    font-family:'Cinzel',serif;
+    font-size:24px;
+    font-weight:700;
 }
 
 .card{
@@ -1121,7 +1341,7 @@ header.hide{
 .why-grid div:nth-child(1){
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url("../images/why/trust.png");
+    url("../images/why/trust.jpg");
 
     background-size: cover;
     background-position: center 75%;
@@ -1131,7 +1351,7 @@ header.hide{
 .why-grid div:nth-child(2){
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url("../images/why/quality.png");
+    url("../images/why/quality.jpg");
 
     background-size: cover;
     background-position: center 45%;
@@ -1141,7 +1361,7 @@ header.hide{
 .why-grid div:nth-child(3){
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url("../images/why/professional.png");
+    url("../images/why/professional.jpg");
 
     background-size: cover;
     background-position: center 20%;
@@ -1431,4 +1651,73 @@ header.hide{
 
 .faq-question:hover{
     background:rgba(199,171,123,.05);
+}
+
+/* ==========================
+   HERON ISKULAUSE JA HAKUSANAOTSIKKO
+========================== */
+
+.hero-slogan{
+    color:#f5f5f5;
+    font-family:'Cinzel',serif;
+    font-size:92px;
+    line-height:1.05;
+    font-weight:900;
+    margin-bottom:10px;
+}
+
+.hero-slogan span{
+    color:var(--gold);
+}
+
+.hero-brand{
+    font-family:'Cinzel',serif;
+    font-size:112px;
+    font-weight:900;
+    letter-spacing:1px;
+    color:#C7AB7B;
+    background:linear-gradient(180deg,#E2C997 0%,#C7AB7B 55%,#E2C997 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 3px 18px rgba(0,0,0,.75));
+    margin-bottom:25px;
+    line-height:1.1;
+}
+
+.hero h1.hero-keyword{
+    font-family:'Cinzel',serif;
+    font-size:34px;
+    line-height:1.25;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero.page-hero .hero-slogan{
+    font-size:clamp(38px,7vw,72px);
+    margin-bottom:20px;
+}
+
+@media (max-width:768px){
+    .hero-slogan{
+        font-size:50px;
+    }
+    .hero-brand{
+        font-size:76px;
+    }
+    .hero h1.hero-keyword{
+        font-size:26px;
+    }
+}
+
+@media (max-width:480px){
+    .hero-slogan{
+        font-size:42px;
+    }
+    .hero-brand{
+        font-size:52px;
+    }
+    .hero h1.hero-keyword{
+        font-size:22px;
+    }
 }
