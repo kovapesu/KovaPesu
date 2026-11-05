@@ -1233,6 +1233,105 @@ header.hide{
     url("../images/services/gutter.png");
 }
 
+.cards .card:nth-child(7){
+    background-image:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../images/services/cleaning.webp");
+}
+
+.card-link{
+    position:relative;
+    z-index:2;
+    display:inline-block;
+    margin-top:16px;
+    color:var(--gold);
+    font-weight:700;
+    text-decoration:underline;
+}
+
+/* ==========================================
+   KOTISIIVOUSSIVU
+========================================== */
+
+.hero.page-hero{
+    min-height:65vh;
+    background-image:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
+    url("../images/services/cleaning.webp");
+}
+
+.hero.page-hero .hero-content{
+    padding-top:150px;
+}
+
+.hero.page-hero h1{
+    font-size:clamp(38px,7vw,72px);
+    margin-bottom:25px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.info-grid-two{
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+
+.info-box{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:35px 30px;
+}
+
+.info-box h3{
+    font-family:'Cinzel',serif;
+    font-size:22px;
+    color:var(--gold);
+    margin-bottom:14px;
+}
+
+.info-box p,
+.info-box li{
+    color:var(--gray);
+}
+
+.info-box a{
+    color:var(--gold);
+    text-decoration:underline;
+}
+
+.check-list li{
+    position:relative;
+    padding-left:26px;
+    margin-bottom:8px;
+}
+
+.check-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:var(--gold);
+    font-weight:700;
+}
+
+.step-number{
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:16px;
+    border-radius:50%;
+    background:var(--gold);
+    color:var(--black);
+    font-family:'Cinzel',serif;
+    font-size:24px;
+    font-weight:700;
+}
+
 .card{
     background-size:cover;
     background-position:center;
