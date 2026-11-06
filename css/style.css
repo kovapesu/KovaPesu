@@ -1457,6 +1457,15 @@ header.hide{
 
 }
 
+.why-intro {
+    max-width: 800px;
+    margin: -30px auto 40px;
+    color: #d7d7d7;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: center;
+}
+
 .why h2 {
     font-family: "Cinzel", serif;
     font-size: 52px;
